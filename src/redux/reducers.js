@@ -9,11 +9,8 @@ const initialState = {
   departure: '',
   arrival: '',
   allFlights: [],
-  allAirports: [],
-  allAirlines: [],
   availableFlights: [],
   errorMessage: '',
-  isLoading: false,
 };
 
 const reducer = (state = initialState, action) => {
