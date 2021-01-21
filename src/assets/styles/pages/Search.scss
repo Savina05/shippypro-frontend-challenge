@@ -1,0 +1,7 @@
+@import '../utils';
+
+.container_flights {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}

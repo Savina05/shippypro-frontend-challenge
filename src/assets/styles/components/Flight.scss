@@ -1,0 +1,46 @@
+@import '../utils';
+
+.card {
+  margin-top: 30px;
+  border-radius: 8px;
+  padding: 0 20px;
+  width: fit-content;
+  transition: all 0.5s ease-in-out;
+  display: inline-block;
+  margin-right: 40px;
+
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 1px 1px 15px 1px rgba(#888, 0.5);
+  }
+
+  h1,
+  h3 {
+    margin: 0;
+  }
+
+  h1 {
+    padding-top: 10px;
+  }
+
+  p {
+    font-weight: 700;
+    font-size: 24px;
+    padding: 8px;
+  }
+
+  button {
+    outline: none;
+    border: none;
+    background-color: $primary-color;
+    padding: 8px 16px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-radius: 32px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

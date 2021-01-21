@@ -1,0 +1,15 @@
+.logo {
+  height: 34px;
+  width: 203px;
+  background-image: url(../../images/logo.png);
+  background-size: cover;
+  margin: 50px auto;
+
+  @media (min-width: 375px) {
+    margin: 25px auto;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+// FONTS
+$font: 'Montserrat';
+
+// COLORS
+$primary-color: #ff4dab;
+$secondary-color: #45ebc7;
+
+$background-color: #f1f4f6;
+
+$title-color: #000;
+$text-color: #888;
+
+// ANIMATIONS
+
+@keyframes leftToRight {
+  0% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+// SHARED
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 65vw;
+}
+
+// TYPOGRAPHY
+
+.header {
+  font-size: 40px;
+  line-height: 50px;
+  animation: fadeIn 1s ease-in-out;
+
+  @media (min-width: 375px) {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+
+.text {
+  font-size: 21px;
+  color: $text-color;
+  animation: fadeIn 1s ease-in-out;
+}
